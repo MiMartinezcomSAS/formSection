@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		 <link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="hola.js"></script>
+		<meta charset="UTF-8" />
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script >
+	var a =0;
+			function test(){
+				var dia= document.getElementById("dia").value;
+				var mes= document.getElementById("mes").value;
+				var ano= document.getElementById("año").value;
+
+
+			if( parseFloat( dia )  != dia || parseFloat( mes )  != mes ||  parseFloat( ano )  != ano){
+			    alert(' Fecha invalida');
+			  }else{
+
+			  	if(dia >31 || mes >12 || ano >1995){
+			  		alert('Fecha invalida');
+			  	}else{
+			  		alert("Bienvenidos a mi-martinez.com");
+			  		document.location.href='2.html';
+			  		a=1;
+			  	}
+
+			  }
+		
+				
+			}
+		
+	</script>
+	</head>
+	<body>
+
+		<div class="login">
+			<h1>Login</h1>
+		    	<input type="text" name="u" id="dia" placeholder="Dia" />
+		        <input type="text" name="p" id="mes" placeholder="Mes" />
+		        <input type="text" name="p" id="año" placeholder="Año"/>
+		        <button  onclick="test();">Mi martinez</a>
+</div>
+
+	</body>
+</html>
