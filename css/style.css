@@ -1,20 +1,141 @@
-html,body{
-	margin: 0;
-	padding: 0;
-}
 
 body{
-	background:rgb(142, 126, 126);
+    background: url('../img/home-chicas.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-size: 16px;
+}
+img{
+    width: 100%;
+}
+#wrapper{
+    background: rgba(255, 255, 255, 0.7);
+    left: 50%;
+    margin: -180px -310px;
+    position: absolute;
+    top: 50%;
+    width: 620px;
+
+
+}
+#wrapper figure{
+    margin-left: -150px ;
+    left: 50%;
+    position: absolute;
+    top: -50px;
+    width: 300px;
+}
+#form-girls{
+    background: white;
+    margin: 70px auto 30px;
+    width: 90%;
+    padding-bottom: 20px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out
+
+}
+.content-questions{
+    padding: 0 20px;
+    text-align: center;
+}
+#form-girls p{
+    font-size: .8em;
+    text-align: justify;
+    padding: 20px;
+}
+#form-girls input{
+    background: #e3e3e3;
+    display: block;
+    color: #ffffff;
+    border: 1px solid rgba(0,0,0,.35);
+    margin: 5px 0;
+    padding: 10px 5px;
+    width: 505px;
+}
+#form-girls button{
+    background: #bf0411;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-right: 20px
+}
+#next{
+
+}
+#next,#prev{
+    display: none;
+}
+.content-questions{
+    display: none;
+}
+.show-questions{
+    display: block !important;
+}
+.show-inline{
+    display: inline-block !important;
+}
+.content-button{
+    text-align: right;
+}
+.terms{
+    background: rgba(0, 0, 0, 0.7);
+    bottom: -23px;
+    color: #ffffff;
+    font-size: .8em;
+    font-weight: bold;
+    padding: 4px 10px;
+    position: absolute;
+    right: 0;
 }
 
-
-
-
-
-.hiden{
-	display: none;
-	margin: 0;
-	padding: 0;
-	height: 0px;
-	width: 0px;
+.date-form-content{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.date-form{
+    background: rgba(0, 0, 0, 1);
+    height: 200px;
+    left: 50%;
+    margin: -200px ;
+    padding: 10px 0 80px 0;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    width: 400px;
+}
+.date-form p{
+    color: #ffffff;
+}
+.date-form input{
+    font-size: 2em;
+    display: inline-block;
+    height: 80px;
+    margin: 30px 2px 0 2px;
+    text-align: center;
+    width: 80px;
+}
+.date-form button{
+    background: #414141;
+    border: none;
+    color: #ffffff;
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+.date-form figure{
+    bottom: -90px;
+    margin-left: -160px ;
+    left: 50%;
+    position: absolute;
+    width: 320px;
+}
+.hidden{
+    display: none;
 }
