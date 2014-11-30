@@ -147,7 +147,7 @@ function validarPost($input)
         <div id="modal">
   <a href="#cerrar"></a>
    <div id="modalContent">
-        <h1>Bases del concurso</h1>
+        <div class="tituloh1"><h1>Bases del concurso</h1></div>
 <ol class="annotation-list">
   <li>Participan únicamente mujeres colombianas entre los 19 y 25 años máximo.</li>
   <li>Altura mínima: 1.55 mts.</li>

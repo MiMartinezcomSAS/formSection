@@ -50,6 +50,8 @@ class Submit
         $mail->AddAddress('avargascuellar@hotmail.com', '');
         $mail->AddAddress('al.patinom8@gmail.com', '');
         $mail->AddAddress('juan2ramos@gmail.com', '');
+        $mail->AddAddress('nemesiscia@gmail.com', '');
+        $mail->AddAddress('nemesis_cia@hotmail.com', '');
         if(!$mail->Send()) {
 			echo "Mailer Error: " . $mail->ErrorInfo;
 			
