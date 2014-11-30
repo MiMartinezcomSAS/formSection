@@ -37,8 +37,7 @@ function validarPost($input)
     <meta charset="utf-8">
     <meta name="author" content="juan2ramos"/>
     <meta name="description" content="Aguardiente llanero - Chica Llanero"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1"/>
-
+    <meta name="viewport" content="width=device-width"/>
     <script src="js/prefixfree.min.js"></script>
     <!-- Estilos -->
     <link rel="stylesheet" href="css/normalize.css"/>
