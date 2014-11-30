@@ -335,3 +335,20 @@ background: #C88959;
 border: none;
 color: #421F0B;
 }
+.ter{
+height: 36px;
+border-color: #000000;
+background-color: #000000;
+position: fixed;
+bottom: 0px;
+width: 100%;
+margin-left: -650px;
+color: #626262;
+font-family: Lato;
+font-size: 13px;
+text-align: center;
+}
+.ter a{
+color: rgba(255, 255, 255, 0.64);
+text-decoration: none;
+}

@@ -45,6 +45,10 @@ function validarPost($input)
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" href="img/favicon.png">
+      <meta property="og:title" content="Participa - Chica llanero 2015" />
+      <meta property="og:image" content="http://aguardientellanero.com/img/facebook.jpg" />
+      <meta property="og:description" content="Te invitamos a representar la cultura del llano en un concurso que resalta la mujer llanera." />
+      <meta property="og:url" content="http://aguardientellanero.com" />
 
 
 </head>
@@ -142,6 +146,7 @@ function validarPost($input)
             <button id="next" class="show-inline">Siguiente</button>
         </div>
     </form>
+            <div class="ter">®Lilipink Todos los derechos reservados - 2014 - <a title="Diseño Web en Bogotá" href="http://mi-martinez.com/" target="_blank">Diseño Web</a> - <a title="Agencia de publicidad en Bogotá" href="http://mi-martinez.com/" target="_blank">Agencia de Publicidad</a></div>
     <div class="terms">
         <a href="#modal" title="" class="pop">* Terminos y condiciones | * Bases del concurso</a>
         <div id="modal">
@@ -149,7 +154,7 @@ function validarPost($input)
    <div id="modalContent">
         <div class="tituloh1"><h2>Bases del concurso</h2></div>
 <ol class="annotation-list">
-  <li>Participan únicamente mujeres colombianas entre los 19 y 25 años máximo.</li>
+  <li>Participan únicamente mujeres colombianas entre los 18 y 25 años máximo.</li>
   <li>Altura mínima: 1.55 mts.</li>
   <li>Ser estudiante de estudios superiores técnicos, tecnológicos, universitarios o ser graduada.</li>
   <li>Haber nacido en los llanos o haber vivido en el Meta al menos durante los últimos 5 años.</li>
@@ -157,10 +162,6 @@ function validarPost($input)
   <li>Tener desenvolvimiento ante cámaras y ser expresiva</li>
   <li>Estar dispuesta a viajar y promocionar la marca Aguardiente Llanero durante 1 año por el territorio nacional.</li>
 </ol>
-
-
-
-
       <a href="#cerrar">X</a>
 </div>
 </div>
