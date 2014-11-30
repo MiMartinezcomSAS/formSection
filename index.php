@@ -7,7 +7,8 @@ if (!empty($_POST)) {
     include('includes/submit.php');
 
     $verificar = new Verificar();
-    $error = (empty($verificar->getErrors())) ? false : $verificar->getErrors();
+    $errorsR = $verificar->getErrors();
+    $error = (empty($errorsR)) ? false : $verificar->getErrors();
     if($error){new Submit();}
     $date = false;
 }
