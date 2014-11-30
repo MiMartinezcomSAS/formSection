@@ -45,6 +45,7 @@ function validarPost($input)
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/favicon.png">
 
 
 </head>
@@ -142,7 +143,27 @@ function validarPost($input)
         </div>
     </form>
     <div class="terms">
-        * Terminos y condiciones | * Bases del concurso
+        <a href="#modal" title="" class="pop">* Terminos y condiciones | * Bases del concurso</a>
+        <div id="modal">
+  <a href="#cerrar"></a>
+   <div id="modalContent">
+        <h1>Bases del concurso</h1>
+<ol class="annotation-list">
+  <li>Participan únicamente mujeres colombianas entre los 19 y 25 años máximo.</li>
+  <li>Altura mínima: 1.55 mts.</li>
+  <li>Ser estudiante de estudios superiores técnicos, tecnológicos, universitarios o ser graduada.</li>
+  <li>Haber nacido en los llanos o haber vivido en el Meta al menos durante los últimos 5 años.</li>
+  <li>Tener conocimiento sobre la cultura llanera y sus costumbres.</li>
+  <li>Tener desenvolvimiento ante cámaras y ser expresiva</li>
+  <li>Estar dispuesta a viajar y promocionar la marca Aguardiente Llanero durante 1 año por el territorio nacional.</li>
+</ol>
+
+
+
+
+      <a href="#cerrar">X</a>
+</div>
+</div>
     </div>
 </div>
 <?php if ($date): ?>
@@ -150,7 +171,7 @@ function validarPost($input)
     <div class="logo"><img src="img/aguardiente-llanero.png" alt=""/><div>
             <input type="text" maxlength="2" placeholder="D" id="day"/>
             <input type="text" maxlength="2" placeholder="M" id="month"/>
-            <input type="text" maxlength="4" placeholder="A" id="year"/>
+            <input type="text" maxlength="2" placeholder="A" id="year"/>
 
             <p style="font-family: 'Lato', sans-serif;color: #3f1010;margin-top: 3px;">*Debes ser mayor de edad para ingresar.</p>
 
