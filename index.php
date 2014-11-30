@@ -46,7 +46,7 @@ function validarPost($input)
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" href="img/favicon.png">
       <meta property="og:title" content="Participa - Chica llanero 2015" />
-      <meta property="og:image" content="http://aguardientellanero.com/img/facebook.jpg" />
+      <meta property="og:image" content="http://aguardientellanero.com/img/facebook.png" />
       <meta property="og:description" content="Te invitamos a representar la cultura del llano en un concurso que resalta la mujer llanera." />
       <meta property="og:url" content="http://aguardientellanero.com" />
 
