@@ -86,6 +86,8 @@
                     <option value="No">No</option>
                 </select>
             </label>
+            <input type="file" id="myFile" placeholder="Sube tu imagen">
+
             <button>Registrarse</button>
         </div>
         <div class="content-button">
