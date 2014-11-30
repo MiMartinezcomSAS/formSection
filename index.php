@@ -37,8 +37,7 @@ function validarPost($input)
     <meta charset="utf-8">
     <meta name="author" content="juan2ramos"/>
     <meta name="description" content="Aguardiente llanero - Chica Llanero"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1"/>
-
+    <meta name="viewport" content="width=device-width"/>
     <script src="js/prefixfree.min.js"></script>
     <!-- Estilos -->
     <link rel="stylesheet" href="css/normalize.css"/>
@@ -63,11 +62,12 @@ function validarPost($input)
         </div>
     </div>
 <?php endif; ?>
-
+<div class="mimi"><img src="img/paper1.png" alt="a lo que vinimos"/></div>
 <div id="wrapper">
     <figure><img src="img/aguardiente-llanero.png" alt="a lo que vinimos"/></figure>
     <form enctype="multipart/form-data" action="" method="POST" id="form-girls">
         <h3><?php echo($mensaje);?></h3>
+        <h1>Convocatoria Chica Llanero 2015</h1>
         <p>
             Hola, Ingresa tus datos en el siguiente formulario, carga tu fotografía y participa por ser la chica llanero
             2015. enseñale al mundo que hace de nuestros llanos orientales el lugar mas hermoso del Pais con las mujeres
@@ -139,7 +139,7 @@ function validarPost($input)
         </div>
         <div class="content-button">
             <button id="prev">Anterior</button>
-            <button id="next" class="show-inline">siguiente</button>
+            <button id="next" class="show-inline">Siguiente</button>
         </div>
     </form>
     <div class="terms">
@@ -147,7 +147,7 @@ function validarPost($input)
         <div id="modal">
   <a href="#cerrar"></a>
    <div id="modalContent">
-        <h1>Bases del concurso</h1>
+        <div class="tituloh1"><h2>Bases del concurso</h2></div>
 <ol class="annotation-list">
   <li>Participan únicamente mujeres colombianas entre los 19 y 25 años máximo.</li>
   <li>Altura mínima: 1.55 mts.</li>
