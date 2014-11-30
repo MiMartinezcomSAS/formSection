@@ -1,3 +1,23 @@
+<?php
+
+$date = true;
+if (!empty($_POST)) {
+
+    include('includes/verificar.php');
+    include('includes/submit.php');
+
+    $verificar = new Verificar();
+    $error = (empty($verificar->getErrors())) ? false : $verificar->getErrors();
+    if($error){new Submit();}
+    $date = false;
+}
+function validarPost($input)
+{
+    return (!empty($_POST)) ? $_POST[$input] : '';
+}
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -21,9 +41,23 @@
 
 </head>
 <body>
+<?php if ($error): ?>
+    <div class="error-content">
+        <div class="close" id="close"></div>
+        <div class="errors">
+            <h4>Verifica los siguiente errores</h4>
+            <?php
+            foreach ($error as $key => $value):
+                foreach ($value as $errors):
+                    echo('<span>' . $key . ' ' . $errors . '</span>');
+                endforeach;endforeach;?>
+        </div>
+    </div>
+<?php endif; ?>
+
 <div id="wrapper">
     <figure><img src="img/a-lo-que-vinimos.png" alt="a lo que vinimos"/></figure>
-    <form action="" id="form-girls">
+    <form enctype="multipart/form-data" action="" method="POST" id="form-girls">
         <p>
             Hola, Ingresa tus datos en el siguiente formulario, carga tu fotografía y participa por ser la chica llanero
             2015. enseñale al mundo que hace de nuestros llanos orientales el lugar mas hermoso del Pais con las mujeres
@@ -32,34 +66,36 @@
         </p>
 
         <div id="content-1" class="content-questions">
-            <input type="text" placeholder="Nombre" name="nombre"/>
-            <input type="text" placeholder="Apellido" name="apellido"/>
-            <input type="text" placeholder="Edad" name="edad"/>
+            <input type="text" placeholder="Nombre" name="nombre" value="<?php echo(validarPost('nombre')); ?>"/>
+            <input type="text" placeholder="Apellido" name="apellido" value="<?php echo(validarPost('apellido')); ?>"/>
+            <input type="text" placeholder="Edad" name="edad" value="<?php echo(validarPost('edad')); ?>"/>
         </div>
         <div id="content-2" class="content-questions">
-            <input type="text" placeholder="Ocupación" name="ocupacion"/>
-            <input type="email" placeholder="Correo electronico" name="mail"/>
-            <input type="text" placeholder="Teléfono" name="telefono"/>
-            <input type="text" placeholder="Celular" name="celular"/>
+            <input type="text" placeholder="Ocupación" name="ocupacion"
+                   value="<?php echo(validarPost('ocupacion')); ?>"/>
+            <input type="email" placeholder="Correo electronico" name="mail"
+                   value="<?php echo(validarPost('mail')); ?>"/>
+            <input type="text" placeholder="Teléfono" name="telefono" value="<?php echo(validarPost('telefono')); ?>"/>
+            <input type="text" placeholder="Celular" name="celular" value="<?php echo(validarPost('celular')); ?>"/>
 
         </div>
         <div id="content-3" class="content-questions">
 
             <label>Actualmente cursa alguna carrera técnica, tecnológica o profesional?
-                <select name="">
+                <select name="carrera">
                     <option value="Si">Si</option>
                     <option value="No">No</option>
                 </select>
             </label>
 
             <label>Tienes algún título universitario?
-                <select>
+                <select name="titulo">
                     <option value="Si">Si</option>
                     <option value="No">No</option>
                 </select>
             </label>
             <label>Eres llanera de nacimiento o has vivido en el Meta los últimos 5 años?
-                <select>
+                <select name="llanera">
                     <option value="Si">Si</option>
                     <option value="No">No</option>
                 </select>
@@ -68,27 +104,28 @@
         <div id="content-4" class="content-questions">
 
             <label>Tienes conocimientos sobre la cultura llanera y sus costumbres?
-                <select>
+                <select name="conocimientos">
                     <option value="Si">Si</option>
                     <option value="No">No</option>
                 </select>
             </label>
             <label>Te desenvuelves bien ante cámaras y eres expresiva?
-                <select>
+                <select name="expresiva">
                     <option value="Si">Si</option>
                     <option value="No">No</option>
                 </select>
             </label>
             <label>Estas dispuesta a viajar y promocionar la marca Aguardiente Llanero durante 1 año en
                 todo el territorio nacional?
-                <select>
+                <select name="viajar">
                     <option value="Si">Si</option>
                     <option value="No">No</option>
                 </select>
             </label>
-            <input type="file" id="myFile" placeholder="Sube tu imagen">
+            <label for="imagen" name="imagen">Sube tu imagen</label>
+            <input name="imagen" type="file" id="myFile" placeholder="Sube tu imagen">
 
-            <button>Registrarse</button>
+            <input type="submit" value="Registrarse"/>
         </div>
         <div class="content-button">
             <button id="prev">Anterior</button>
@@ -99,21 +136,22 @@
         * Terminos y condiciones | * Bases del concurso
     </div>
 </div>
+<?php if ($date): ?>
+    <div class="date-form-content" id="date-form-content">
+        <div class="date-form">
+            <input type="text" placeholder="D" id="day"/>
+            <input type="text" placeholder="M" id="month"/>
+            <input type="text" placeholder="A" id="year"/>
 
-<div class="date-form-content" id="date-form-content">
-    <div class="date-form">
-        <input type="text" placeholder="D" id="day"/>
-        <input type="text" placeholder="M" id="month"/>
-        <input type="text" placeholder="A" id="year"/>
+            <p>*Debes ser mayor de edad para ingresar.</p>
 
-        <p>*Debes ser mayor de edad para ingresar.</p>
-
-        <div class="content-button">
-            <button id="date-submit">Ingresar</button>
+            <div class="content-button">
+                <button id="date-submit">Ingresar</button>
+            </div>
+            <figure><img src="img/a-lo-que-vinimos.png" alt=""/></figure>
         </div>
-        <figure><img src="img/a-lo-que-vinimos.png" alt=""/></figure>
     </div>
-</div>
+<?php endif ?>
 <!-- JavaScript -->
 <script src="js/script.js"></script>
 </body>

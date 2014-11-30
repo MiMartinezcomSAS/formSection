@@ -47,7 +47,7 @@ img {
 #form-girls p {
     font-size: .8em;
     text-align: justify;
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 
 #form-girls input {
@@ -60,7 +60,7 @@ img {
     width: 505px;
 }
 
-#form-girls button {
+#form-girls button, #form-girls input[type='submit'] {
     background: #bf0411;
     border: none;
     color: #ffffff;
@@ -69,6 +69,10 @@ img {
     padding: 10px 15px;
     margin-top: 10px;
     margin-right: 20px
+}
+
+#form-girls input[type='submit'] {
+    width: 517px;
 }
 
 #form-girls label {
@@ -110,15 +114,42 @@ img {
     right: 0;
 }
 
-.date-form-content {
+.date-form-content, .error-content, .close {
     background: rgba(0, 0, 0, 0.7);
     height: 100%;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
-    display: none;
+    z-index: 100000;
+}
+
+.close {
+    background: rgba(0, 0, 0, 0);
+    z-index: 0;
+}
+
+.errors {
+    background: #ffffff;
+    font-size: .8em;
+    left: 50%;
+    margin: -200px -150px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+}
+
+.errors span {
+    display: block;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+
+.errors h4 {
+    color: red;
+    font-size: 1rem;
+    margin: 10px 0;
 }
 
 .date-form {

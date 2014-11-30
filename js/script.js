@@ -3,11 +3,23 @@ var d = document,
     contentQuestionAll = d.querySelectorAll('.content-questions'),
     dateSubmit = d.getElementById('date-submit'),
     numberContentQ = contentQuestionAll.length,
+    register = d.getElementById('register'),
+    close = d.getElementById('close'),
     actual = 1;
 d.getElementById("content-" + actual).classList.add('show-questions');
 next.addEventListener('click', nextQuestion);
 prev.addEventListener('click', prevQuestion);
+
+close.addEventListener('click', closeF);
 dateSubmit.addEventListener('click', dateCheck);
+register.addEventListener('click', registerUser);
+
+function closeF(e){
+    d.querySelector('.error-content').classList.add('hidden');
+    d.querySelector('.error').classList.add('hidden');
+    alert('ss')
+
+}
 function nextQuestion(e) {
 
     e.preventDefault();
@@ -59,5 +71,10 @@ function dateCheck(e) {
         }
     }
 
+
+}
+
+function registerUser(e){
+    e.preventDefault();
 
 }
