@@ -82,7 +82,12 @@ img {
     margin: 10px 0;
     text-align: left;
 }
+#form-girls h3{
 
+    margin: 0;
+    color : red;
+    padding: 20px 0 0 20px
+}
 #next, #prev {
     display: none;
 }

@@ -1,15 +1,22 @@
 <?php
 $error = false;
 $date = true;
+$showError = false;
+$mensaje = '';
 if (!empty($_POST)) {
 
     include('includes/verificar.php');
-    
+
 
     $verificar = new Verificar();
     $errorsR = $verificar->getErrors();
     $error = (empty($errorsR)) ? false : $verificar->getErrors();
-    if(!$error){include('includes/submit.php'); new Submit();}
+    if (!$error) {
+        include('includes/submit.php');
+        new Submit();
+        $_POST = "";
+        $mensaje = "El registro se realizo con éxito!!";
+    }else{$showError = true;}
     $date = false;
 }
 function validarPost($input)
@@ -43,7 +50,7 @@ function validarPost($input)
 </head>
 <body>
 <?php if ($error): ?>
-    <div class="error-content">
+    <div class="error-content" id="error-content" data-visual="<?php $showError?>">
         <div class="close" id="close"></div>
         <div class="errors">
             <h4>Verifica los siguiente errores</h4>
@@ -59,6 +66,7 @@ function validarPost($input)
 <div id="wrapper">
     <figure><img src="img/a-lo-que-vinimos.png" alt="a lo que vinimos"/></figure>
     <form enctype="multipart/form-data" action="" method="POST" id="form-girls">
+        <h3><?php echo($mensaje);?></h3>
         <p>
             Hola, Ingresa tus datos en el siguiente formulario, carga tu fotografía y participa por ser la chica llanero
             2015. enseñale al mundo que hace de nuestros llanos orientales el lugar mas hermoso del Pais con las mujeres
@@ -138,11 +146,11 @@ function validarPost($input)
     </div>
 </div>
 <?php if ($date): ?>
-    <div class="date-form-content" id="date-form-content">
+    <div class="date-form-content" id="date-form-content" ">
         <div class="date-form">
-            <input type="text" placeholder="D" id="day"/>
-            <input type="text" placeholder="M" id="month"/>
-            <input type="text" placeholder="A" id="year"/>
+            <input type="text" maxlength="2" placeholder="D" id="day"/>
+            <input type="text" maxlength="2" placeholder="M" id="month"/>
+            <input type="text" maxlength="4" placeholder="A" id="year"/>
 
             <p>*Debes ser mayor de edad para ingresar.</p>
 
@@ -153,6 +161,8 @@ function validarPost($input)
         </div>
     </div>
 <?php endif ?>
+<input type="hidden" id="dateE" value="<?php echo($date)?>"/>
+<input type="hidden" id="showError" value="<?php echo($showError)?>"/>
 <!-- JavaScript -->
 <script src="js/script.js"></script>
 </body>

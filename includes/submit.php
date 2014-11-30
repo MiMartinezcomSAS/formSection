@@ -30,15 +30,15 @@ class Submit
         $mail->From = 'juan2ramos@gmail.com';
         $mail->Subject = 'Nuevo postulante chica llanero 2015';
         $mail->MsgHTML('Mensaje con HTML');
-        $template = '<h1>Nuevo postulante chica llanero 2015</h1><br><br>';
-        $template .= 'Nombre' . $_POST['nombre'] . '<br>';
-        $template .= 'Apellido' . $_POST['apellido'] . '<br>';
-        $template .= 'Edad' . $_POST['edad'] . '<br>';
-        $template .= 'Ocupación' . $_POST['ocupacion'] . '<br>';
-        $template .= 'mail' . $_POST['mail'] . '<br>';
-        $template .= 'Teléfono' . $_POST['telefono'] . '<br>';
-        $template .= 'Celular' . $_POST['celular'] . '<br>';
-        $template .= 'Actualmente cursa alguna carrera técnica, tecnológica o profesional? :' . $_POST['carrera'] . '<br>';
+        $template = '<h1>Nuevo postulante chica llanero 2015</h1><br>';
+        $template .= 'Nombre : ' . $_POST['nombre'] . '<br>';
+        $template .= 'Apellido : ' . $_POST['apellido'] . '<br>';
+        $template .= 'Edad : ' . $_POST['edad'] . '<br>';
+        $template .= 'Ocupación : ' . $_POST['ocupacion'] . '<br>';
+        $template .= 'mail : ' . $_POST['mail'] . '<br>';
+        $template .= 'Teléfono : ' . $_POST['telefono'] . '<br>';
+        $template .= 'Celular : ' . $_POST['celular'] . '<br>';
+        $template .= 'Actualmente cursa alguna carrera técnica, tecnológica o profesional? : ' . $_POST['carrera'] . '<br>';
         $template .= 'Tienes algún título universitario? : ' . $_POST['titulo'] . '<br>';
         $template .= 'Eres llanera de nacimiento o has vivido en el Meta los últimos 5 años? : ' . $_POST['llanera'] . '<br>';
         $template .= 'Tienes conocimientos sobre la cultura llanera y sus costumbres? : ' . $_POST['conocimientos'] . '<br>';
@@ -50,10 +50,6 @@ class Submit
         $mail->AddAddress('juan2ramos@gmail.com', '');
         if(!$mail->Send()) {
 			echo "Mailer Error: " . $mail->ErrorInfo;
-			
-			} else {
-			
-			echo "Message sent!";
 			
 			}
     }

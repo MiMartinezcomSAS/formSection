@@ -10,9 +10,9 @@ d.getElementById("content-" + actual).classList.add('show-questions');
 next.addEventListener('click', nextQuestion);
 prev.addEventListener('click', prevQuestion);
 
-close.addEventListener('click', closeF);
-dateSubmit.addEventListener('click', dateCheck);
-register.addEventListener('click', registerUser);
+
+
+
 
 function closeF(e){
     d.querySelector('.error-content').classList.add('hidden');
@@ -73,7 +73,19 @@ function dateCheck(e) {
 
 
 }
+function init(){
+var visual = d.getElementById('dateE').value;
+var visualError = d.getElementById('showError').value;
 
+    if(visualError  == 1){
+        close.addEventListener('click', closeF);
+    }
+    if(visual == 1){
+        dateSubmit.addEventListener('click', dateCheck);
+    }
+}
+init();
+register.addEventListener('click', registerUser);
 function registerUser(e){
     e.preventDefault();
 
