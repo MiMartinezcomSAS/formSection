@@ -47,6 +47,8 @@ class Submit
                 todo el territorio nacional? : ' . $_POST['viajar'] . '<br>';
         $template .= ' imagen : ' . '<a href="http://aguardientellanero.com/upload/'.$img.'"><img src="http://aguardientellanero.com/upload/'.$img.'"></a>' . '<br>';
         $mail->Body = $template;
+        $mail->AddAddress('avargascuellar@hotmail.com', '');
+        $mail->AddAddress('al.patinom8@gmail.com', '');
         $mail->AddAddress('juan2ramos@gmail.com', '');
         if(!$mail->Send()) {
 			echo "Mailer Error: " . $mail->ErrorInfo;
