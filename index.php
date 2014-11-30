@@ -146,7 +146,7 @@ function validarPost($input)
             <button id="next" class="show-inline">Siguiente</button>
         </div>
     </form>
-            <div class="ter">®Aguardiente Llanero - Todos los derechos reservados - 2014 - <a title="Diseño Web en Bogotá" href="http://mi-martinez.com/" target="_blank">Diseño Web</a> - <a title="Agencia de publicidad en Bogotá" href="http://mi-martinez.com/" target="_blank">Agencia de Publicidad</a></div>
+            <div class="ter">®Aguardiente Llanero - Todos los derechos reservados - 2014 - <a title="Diseño Web en Bogotá" href="http://mi-martinez.com/" target="_blank">Diseño Web</a> - <a title="Agencia de publicidad en Bogotá" href="http://mi-martinez.com/" target="_blank">Agencia de Publicidad</a><a href="http://mi-martinez.com/" target="_blank"><img src="img/logomim.png" alt="Agencia de publicidad en Bogotá" style="display: inline;width: 90px;vertical-align: sub;padding-left: 10px;"/></a></div>
     <div class="terms">
         <a href="#modal" title="" class="pop">* Terminos y condiciones | * Bases del concurso</a>
         <div id="modal">

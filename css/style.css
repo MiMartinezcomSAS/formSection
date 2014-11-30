@@ -341,12 +341,14 @@ border-color: #000000;
 background-color: #000000;
 position: fixed;
 bottom: 0px;
-width: 100%;
+width: 1920px;
 margin-left: -650px;
 color: #626262;
 font-family: Lato;
-font-size: 13px;
+font-size: 12px;
 text-align: center;
+padding-top: 10px;
+margin-bottom: -10px;
 }
 .ter a{
 color: rgba(255, 255, 255, 0.64);
