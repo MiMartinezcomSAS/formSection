@@ -36,7 +36,7 @@ function validarPost($input)
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="author" content="juan2ramos"/>
-    <meta name="description" content="Inicio"/>
+    <meta name="description" content="Aguardiente llanero - Chica Llanero"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1"/>
 
     <script src="js/prefixfree.min.js"></script>
@@ -64,7 +64,7 @@ function validarPost($input)
 <?php endif; ?>
 
 <div id="wrapper">
-    <figure><img src="img/a-lo-que-vinimos.png" alt="a lo que vinimos"/></figure>
+    <figure><img src="img/aguardiente-llanero.png" alt="a lo que vinimos"/></figure>
     <form enctype="multipart/form-data" action="" method="POST" id="form-girls">
         <h3><?php echo($mensaje);?></h3>
         <p>
@@ -146,18 +146,17 @@ function validarPost($input)
     </div>
 </div>
 <?php if ($date): ?>
-    <div class="date-form-content" id="date-form-content" ">
-        <div class="date-form">
+    <div class="date-form-content" id="date-form-content" ">        <div class="date-form">
+    <div class="logo"><img src="img/aguardiente-llanero.png" alt=""/><div>
             <input type="text" maxlength="2" placeholder="D" id="day"/>
             <input type="text" maxlength="2" placeholder="M" id="month"/>
             <input type="text" maxlength="4" placeholder="A" id="year"/>
 
-            <p>*Debes ser mayor de edad para ingresar.</p>
+            <p style="font-family: 'Lato', sans-serif;color: #3f1010;margin-top: 3px;">*Debes ser mayor de edad para ingresar.</p>
 
             <div class="content-button">
                 <button id="date-submit">Ingresar</button>
             </div>
-            <figure><img src="img/a-lo-que-vinimos.png" alt=""/></figure>
         </div>
     </div>
 <?php endif ?>
