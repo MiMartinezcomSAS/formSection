@@ -302,3 +302,18 @@ text-decoration: none;
   text-align: center;
   text-shadow: 0px -1px 0px #888;
 }
+#form-girls input::-webkit-input-placeholder {
+    color: #F7DDC7;
+}
+
+#form-girls input:-moz-placeholder { /* Firefox 18- */
+    color: #F7DDC7;
+}
+
+#form-girls input::-moz-placeholder {  /* Firefox 19+ */
+    color: #F7DDC7;
+}
+
+#form-girls input:-ms-input-placeholder {
+    color: #F7DDC7;
+}
