@@ -35,7 +35,7 @@ function validarPost($input)
 
     <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="author" content="juan2ramos"/>
+    <meta name="author" content="Unidad de licores del Meta"/>
     <meta name="description" content="Aguardiente llanero - Chica Llanero"/>
     <meta name="viewport" content="width=device-width"/>
     <script src="js/prefixfree.min.js"></script>
