@@ -25,9 +25,9 @@ class Submit
         require 'PHPMailer/PHPMailerAutoload.php';
         $mail = new PHPMailer;
         $mail->IsSendmail();
-        $mail->FromName = 'Formulario';
+        $mail->FromName = 'Nuevo Registro - Chica Llanero';
         $mail->CharSet = 'UTF-8';
-        $mail->From = 'juan2ramos@gmail.com';
+        $mail->From = 'noreply@aguardientellanero.com';
         $mail->Subject = 'Nuevo postulante chica llanero 2015';
         $mail->MsgHTML('Mensaje con HTML');
         $template = '<h1>Nuevo postulante chica llanero 2015</h1><br>';
@@ -50,8 +50,7 @@ class Submit
         $mail->AddAddress('avargascuellar@hotmail.com', '');
         $mail->AddAddress('al.patinom8@gmail.com', '');
         $mail->AddAddress('juan2ramos@gmail.com', '');
-        $mail->AddAddress('nemesiscia@gmail.com', '');
-        $mail->AddAddress('nemesis_cia@hotmail.com', '');
+        $mail->AddAddress('soporte@mi-martinez.com', '');
         if(!$mail->Send()) {
 			echo "Mailer Error: " . $mail->ErrorInfo;
 			

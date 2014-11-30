@@ -10,7 +10,7 @@ img {
 }
 
 #wrapper {
-    background: rgba(255, 255, 255, 0.7);
+    background: none;
     left: 50%;
     margin: -220px -310px;
     position: absolute;
@@ -26,9 +26,15 @@ img {
     top: -50px;
     width: 300px;
 }
-
+.mimi{
+width: 876px;
+top: 50%;
+left: 50%;
+position: absolute;
+margin: -314px -421px;
+}
 #form-girls {
-    background: white;
+    background: none;
     margin: 70px auto 30px;
     width: 90%;
     padding-bottom: 20px;
@@ -51,13 +57,13 @@ img {
 }
 
 #form-girls input {
-    background: #e3e3e3;
-    display: block;
-    color: #000;
-    border: 1px solid rgba(0, 0, 0, .35);
-    margin: 5px 0;
-    padding: 10px 5px;
-    width: 505px;
+background: rgba(197, 132, 80, 0.57);
+display: block;
+color: #000;
+border: 1px solid rgba(128, 93, 93, 0.35);
+margin: 5px 0;
+padding: 10px 5px;
+width: 485px;
 }
 
 #form-girls button, #form-girls input[type='submit'] {
@@ -68,7 +74,7 @@ img {
     font-weight: bold;
     padding: 10px 15px;
     margin-top: 10px;
-    margin-right: 20px
+    margin-right: 40px
 }
 
 #form-girls input[type='submit'] {
@@ -109,14 +115,14 @@ img {
 }
 
 .terms {
-    background: rgba(0, 0, 0, 0.7);
-    bottom: -23px;
-    color: #ffffff;
-    font-size: .8em;
-    font-weight: bold;
-    padding: 4px 10px;
-    position: absolute;
-    right: 0;
+background: rgba(0, 0, 0, 0.7);
+bottom: -21px;
+color: #ffffff;
+font-size: .8em;
+font-weight: bold;
+padding: 4px 10px;
+position: absolute;
+right: 144px;
 }
 
 .date-form-content, .error-content, .close {
@@ -222,7 +228,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 z-index: 6;
-margin: -12% 0px 0px -267px;
+margin: -221px 0px 0px -267px;
 float: left;
 width: 500px;
 color: #6E6155;
@@ -232,6 +238,7 @@ border-radius: 5px;
 background: #FFFFFF;
 border: 1px solid #fff;
 box-shadow: 0px 2px 1px #999;
+height: 425px;
 }
 /* ... los estilos de la ventana central ... */
 #modal{
@@ -307,4 +314,24 @@ text-decoration: none;
 }
 .annotation-list li:before p{
     padding-left: 40px;
+}
+h1{
+font-size: 2em;
+margin: 0.67em 0;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+padding: 0px 0px;
+margin-top: -43px;
+margin-bottom: -16px;
+}
+h2{
+font-family: 'Oswald', sans-serif;
+font-size: 24px;
+margin-top: 13px;
+}
+select{
+float: right;
+background: #C88959;
+border: none;
+color: #421F0B;
 }
