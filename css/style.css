@@ -352,3 +352,20 @@ text-align: center;
 color: rgba(255, 255, 255, 0.64);
 text-decoration: none;
 }
+
+#form-girls input::-webkit-input-placeholder {
+    color: #F7DDC7;
+}
+
+#form-girls input:-moz-placeholder { /* Firefox 18- */
+    color: #F7DDC7;
+}
+
+#form-girls input::-moz-placeholder {  /* Firefox 19+ */
+    color: #F7DDC7;
+}
+
+#form-girls input:-ms-input-placeholder {
+    color: #F7DDC7;
+}
+
