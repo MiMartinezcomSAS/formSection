@@ -37,15 +37,15 @@ class Verificar
     }
     private function size($value)
     {
-        return ($_FILES[$value][size] < 2489 ? 'debe pesar menos de 2 mb' : false);
+        return ($_FILES[$value]['size'] < 2489 ? 'debe pesar menos de 2 mb' : false);
     }
     private function emptyImage($value)
     {
-        return (empty($_FILES[$value][name]) ? 'Esta Vacio' : false);
+        return (empty($_FILES[$value]['name']) ? 'Esta Vacio' : false);
     }
     private function isImage($value)
     {
-        if(empty($_FILES[$value][name])){
+        if(empty($_FILES[$value]['name'])){
             return false;
         }
         return (!getimagesize($_FILES[$value]["tmp_name"]) ? 'No es un archivo permitido' : false);

@@ -1,15 +1,15 @@
 <?php
-
+$error = false;
 $date = true;
 if (!empty($_POST)) {
 
     include('includes/verificar.php');
-    include('includes/submit.php');
+    
 
     $verificar = new Verificar();
     $errorsR = $verificar->getErrors();
     $error = (empty($errorsR)) ? false : $verificar->getErrors();
-    if($error){new Submit();}
+    if(!$error){include('includes/submit.php'); new Submit();}
     $date = false;
 }
 function validarPost($input)

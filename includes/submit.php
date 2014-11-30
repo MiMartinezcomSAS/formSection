@@ -9,16 +9,17 @@ class Submit
     public function __construct()
     {
         $this->upload();
+        
     }
 
     function upload()
     {
         $uploadImage = new upload('imagen');
-        $this->nameImage = $uploadImage->upload();
-
+        
+	$this->sendMail($uploadImage->upload());
     }
 
-    function sendMail()
+    function sendMail($img)
     {
 
         require 'PHPMailer/PHPMailerAutoload.php';
@@ -44,10 +45,17 @@ class Submit
         $template .= 'Te desenvuelves bien ante cámaras y eres expresiva? :' . $_POST['expresiva'] . '<br>';
         $template .= 'Estas dispuesta a viajar y promocionar la marca Aguardiente Llanero durante 1 año en
                 todo el territorio nacional? : ' . $_POST['viajar'] . '<br>';
-        $template .= ' imagen : ' . '<a href="http://aguardientellanero.com/'.$this->nameImage.'"><img src="http://aguardientellanero.com/'.$this->$nameImage.'"></a>' . '<br>';
+        $template .= ' imagen : ' . '<a href="http://aguardientellanero.com/upload/'.$img.'"><img src="http://aguardientellanero.com/upload/'.$img.'"></a>' . '<br>';
         $mail->Body = $template;
         $mail->AddAddress('juan2ramos@gmail.com', '');
-        $mail->Send();
+        if(!$mail->Send()) {
+			echo "Mailer Error: " . $mail->ErrorInfo;
+			
+			} else {
+			
+			echo "Message sent!";
+			
+			}
     }
 
     function dataBase()

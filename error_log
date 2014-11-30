@@ -1,0 +1,23 @@
+[29-Nov-2014 23:35:22] PHP Fatal error:  Can't use method return value in write context in /home2/aguardi1/public_html/index.php on line 10
+[29-Nov-2014 23:35:27] PHP Fatal error:  Can't use method return value in write context in /home2/aguardi1/public_html/index.php on line 10
+[29-Nov-2014 23:37:57 America/Denver] PHP Fatal error:  Can't use method return value in write context in /home2/aguardi1/public_html/index.php on line 10
+[29-Nov-2014 23:38:01 America/Denver] PHP Fatal error:  Can't use method return value in write context in /home2/aguardi1/public_html/index.php on line 10
+[29-Nov-2014 23:38:03 America/Denver] PHP Fatal error:  Can't use method return value in write context in /home2/aguardi1/public_html/index.php on line 10
+[29-Nov-2014 23:38:04 America/Denver] PHP Fatal error:  Can't use method return value in write context in /home2/aguardi1/public_html/index.php on line 10
+[29-Nov-2014 23:38:59 America/Denver] PHP Fatal error:  Can't use method return value in write context in /home2/aguardi1/public_html/index.php on line 10
+[29-Nov-2014 23:43:29 America/Denver] PHP Notice:  Undefined variable: error in /home2/aguardi1/public_html/index.php on line 45
+[29-Nov-2014 23:44:30 America/Denver] PHP Notice:  Use of undefined constant size - assumed 'size' in /home2/aguardi1/public_html/includes/verificar.php on line 40
+[29-Nov-2014 23:44:30 America/Denver] PHP Notice:  Use of undefined constant name - assumed 'name' in /home2/aguardi1/public_html/includes/verificar.php on line 44
+[29-Nov-2014 23:45:34 America/Denver] PHP Notice:  Use of undefined constant size - assumed 'size' in /home2/aguardi1/public_html/includes/verificar.php on line 40
+[29-Nov-2014 23:45:34 America/Denver] PHP Notice:  Use of undefined constant name - assumed 'name' in /home2/aguardi1/public_html/includes/verificar.php on line 44
+[29-Nov-2014 23:54:16 America/Denver] PHP Notice:  Undefined variable: error in /home2/aguardi1/public_html/index.php on line 45
+[29-Nov-2014 23:56:46 America/Denver] PHP Notice:  Undefined variable: error in /home2/aguardi1/public_html/index.php on line 45
+[29-Nov-2014 23:58:38 America/Denver] PHP Notice:  Array to string conversion in /home2/aguardi1/public_html/includes/submit.php on line 48
+[29-Nov-2014 23:58:38 America/Denver] PHP Notice:  Undefined variable: nameImage in /home2/aguardi1/public_html/includes/submit.php on line 48
+[29-Nov-2014 23:58:38 America/Denver] PHP Fatal error:  Cannot access empty property in /home2/aguardi1/public_html/includes/submit.php on line 48
+[30-Nov-2014 00:00:44 America/Denver] PHP Notice:  Undefined variable: nameImage in /home2/aguardi1/public_html/includes/submit.php on line 48
+[30-Nov-2014 00:00:44 America/Denver] PHP Fatal error:  Cannot access empty property in /home2/aguardi1/public_html/includes/submit.php on line 48
+[30-Nov-2014 00:01:49 America/Denver] PHP Notice:  Array to string conversion in /home2/aguardi1/public_html/includes/submit.php on line 48
+[30-Nov-2014 00:05:02 America/Denver] PHP Notice:  Array to string conversion in /home2/aguardi1/public_html/includes/submit.php on line 48
+[30-Nov-2014 00:08:08 America/Denver] PHP Warning:  Invalid argument supplied for foreach() in /home2/aguardi1/public_html/index.php on line 51
+[30-Nov-2014 00:12:38 America/Denver] PHP Notice:  Array to string conversion in /home2/aguardi1/public_html/includes/submit.php on line 48
