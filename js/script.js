@@ -57,7 +57,8 @@ function dateCheck(e) {
     if (parseFloat(dayInput) != dayInput || parseFloat(monthInput) != monthInput || parseFloat(yearInput) != yearInput) {
         alert(' Fecha invalida');
     } else {
-        yearInput = (yearInput < 50)?'20'+yearInput:'19'+yearInput;
+        yearInput = (yearInput < 50)?(yearInput < 10)?'200'+yearInput:'20'+yearInput:'19'+yearInput;
+
         var birthday = new Date(yearInput, monthInput, dayInput);
         var today = new Date();
         var years = today.getFullYear() - birthday.getFullYear();
