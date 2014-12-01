@@ -15,7 +15,8 @@ class Verificar
             'ocupacion' => array('emptyInput'),
             'mail' => array('emptyInput','mail'),
             'celular' => array('emptyInput', 'number'),
-            'imagen' => array('size','emptyImage','isImage')
+            'imagen' => array('size','emptyImage','isImage'),
+            'imagen1' => array('size','emptyImage1','isImage')
         );
         $this->verificar();
     }
@@ -43,6 +44,10 @@ class Verificar
     {
         return (empty($_FILES[$value]['name']) ? 'Esta Vacio' : false);
     }
+     private function emptyImage1($value)
+    {
+        return (empty($_FILES[$value]['name']) ? 'Esta Vacio' : false);
+    }
     private function isImage($value)
     {
         if(empty($_FILES[$value]['name'])){
@@ -50,6 +55,7 @@ class Verificar
         }
         return (!getimagesize($_FILES[$value]["tmp_name"]) ? 'No es un archivo permitido' : false);
     }
+
     private function emptyInput($value)
     {
         return (empty($_POST[$value]) ? 'Esta Vacio' : false);

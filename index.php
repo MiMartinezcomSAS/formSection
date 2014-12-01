@@ -137,8 +137,10 @@ function validarPost($input)
                     <option value="No">No</option>
                 </select>
             </label>
-            <label for="imagen" name="imagen">Sube tu imagen</label>
+            <label for="imagen" name="imagen">Carga tu imagen de cuerpo completo</label>
             <input name="imagen" type="file" id="myFile" placeholder="Sube tu imagen">
+             <label for="imagen1" name="imagen">Carga tu imagen de perfil</label>
+            <input name="imagen1" type="file" id="myFile" placeholder="Sube tu imagen">
 
             <input type="submit" value="Registrarse"/>
         </div>
@@ -169,7 +171,7 @@ function validarPost($input)
     </div>
 </div>
 <?php if ($date): ?>
-    <div class="date-form-content" id="date-form-content" ">        <div class="date-form">
+    <div class="date-form-content" id="date-form-content" >        <div class="date-form">
     <div class="logo"><img src="img/aguardiente-llanero.png" alt=""/><div>
             <input type="text" maxlength="2" placeholder="D" id="day"/>
             <input type="text" maxlength="2" placeholder="M" id="month"/>

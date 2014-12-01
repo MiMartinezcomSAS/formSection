@@ -20,22 +20,30 @@ img {
 }
 @media  (max-width: 800px){
     #wrapper{
-      background: #fff;
+      background: rgba(255, 255, 255, 0.47);
       width: 88.88%;
       margin: -220px -45%;
-      opacity:0.8;
     }
     #wraper-img{
       display: none;
 
     }
+    #form-girls{
+      background: #fff !important;
+      margin: 55px auto 30px !important;
+    }
     #form-girls input{
       width: 97.6% !important;
+
     }
 
     .errors{
       width: 62% !important;
       margin: -200px -36% !important;
+    }
+    #modalContent{
+      margin: -221px 0 0 -45% !important;
+      width: 82% !important;
     }
 
 }
