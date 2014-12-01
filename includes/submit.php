@@ -16,17 +16,15 @@ class Submit
     function upload()
     {
         $uploadImage = new upload('imagen');
+        $uploadImage1 = new upload('imagen1');
+        private uploadimages=('image'=>array($uploadImage->upload()),
+                                'image1'=>array($uploadImage1->upload()));
         
-	$this->sendMail($uploadImage->upload());
-    }
-    function upload1()
-    {
-        $uploadImage = new upload('imagen1');
-        
-    $this->sendMail($uploadImage->upload1());
+	$this->sendMail(uploadimages);
     }
 
-    function sendMail($img)
+
+    function sendMail($imgs)
     {
 
         require 'PHPMailer/PHPMailerAutoload.php';
