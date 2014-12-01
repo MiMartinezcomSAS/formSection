@@ -18,7 +18,7 @@ img {
     width: 620px;
 
 }
-@media  (max-width: 720px){
+@media  (max-width: 800px){
     #wrapper{
       background: #fff;
       width: 88.88%;
