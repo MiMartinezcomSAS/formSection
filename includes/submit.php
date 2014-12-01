@@ -53,7 +53,7 @@ class Submit
         $template .= 'Estas dispuesta a viajar y promocionar la marca Aguardiente Llanero durante 1 año en
                 todo el territorio nacional? : ' . $_POST['viajar'] . '<br>';
         $template .= ' imagen : ' . '<a href="http://aguardientellanero.com/upload/'.$img.'"><img src="http://aguardientellanero.com/upload/'.$img.'"></a>' . '<br>';
-         $template .= ' imagen1 : ' . '<a href="http://aguardientellanero.com/upload1/'.$img.'"><img src="http://aguardientellanero.com/upload1/'.$img.'"></a>' . '<br>';
+         $template .= ' imagen1 : ' . '<a href="http://aguardientellanero.com/upload/'.$img.'"><img src="http://aguardientellanero.com/upload/'.$img.'"></a>' . '<br>';
         $mail->Body = $template;
         $mail->AddAddress('avargascuellar@hotmail.com', '');
         $mail->AddAddress('al.patinom8@gmail.com', '');
