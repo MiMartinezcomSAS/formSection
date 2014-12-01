@@ -21,3 +21,4 @@
 [30-Nov-2014 00:05:02 America/Denver] PHP Notice:  Array to string conversion in /home2/aguardi1/public_html/includes/submit.php on line 48
 [30-Nov-2014 00:08:08 America/Denver] PHP Warning:  Invalid argument supplied for foreach() in /home2/aguardi1/public_html/index.php on line 51
 [30-Nov-2014 00:12:38 America/Denver] PHP Notice:  Array to string conversion in /home2/aguardi1/public_html/includes/submit.php on line 48
+[30-Nov-2014 14:09:25 America/Denver] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/aguardi1/public_html/includes/verificar.php on line 51
