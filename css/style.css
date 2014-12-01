@@ -12,12 +12,34 @@ img {
 #wrapper {
     background: none;
     left: 50%;
-    margin: -220px -310px;
+    margin: -220px -310px ;
     position: absolute;
     top: 50%;
     width: 620px;
 
 }
+@media  (max-width: 720px){
+    #wrapper{
+      background: #fff;
+      width: 88.88%;
+      margin: -220px -45%;
+      opacity:0.8;
+    }
+    #wraper-img{
+      display: none;
+
+    }
+    #form-girls input{
+      width: 97.6% !important;
+    }
+
+    .errors{
+      width: 62% !important;
+      margin: -200px -36% !important;
+    }
+
+}
+
 
 #wrapper figure {
     margin-left: -150px;

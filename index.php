@@ -44,6 +44,7 @@ function validarPost($input)
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/response.css"/>
     <link rel="shortcut icon" href="img/favicon.png">
       <meta property="og:title" content="Participa - Chica llanero 2015" />
       <meta property="og:image" content="http://aguardientellanero.com/img/facebook.png" />
@@ -66,9 +67,9 @@ function validarPost($input)
         </div>
     </div>
 <?php endif; ?>
-<div class="mimi"><img src="img/paper1.png" alt="a lo que vinimos"/></div>
+<div class="mimi"><img id="wraper-img" src="img/paper1.png" alt="a lo que vinimos"/></div>
 <div id="wrapper">
-    <figure><img src="img/aguardiente-llanero.png" alt="a lo que vinimos"/></figure>
+    <figure><img  src="img/aguardiente-llanero.png" alt="a lo que vinimos"/></figure>
     <form enctype="multipart/form-data" action="" method="POST" id="form-girls">
         <h3><?php echo($mensaje);?></h3>
         <h1>Convocatoria Chica Llanero 2015</h1>
