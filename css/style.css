@@ -45,9 +45,25 @@ img {
       margin: -221px 0 0 -45% !important;
       width: 82% !important;
     }
-
+    h1{
+margin-top: -3px !important;
+}
+body {
+    background: url('../img/home-chicas.jpg') no-repeat center center fixed;
+    height: 100%;
+    font-size: 16px;
+}
+#modalContent{
+  height: 351px !important;
+  overflow: auto;
 }
 
+}
+@media  (max-width: 450px){
+ #wrapper{
+      margin: -165px -45%;
+    }
+}
 
 #wrapper figure {
     margin-left: -150px;
@@ -146,13 +162,16 @@ width: 485px;
 
 .terms {
 background: rgba(0, 0, 0, 0.7);
-bottom: -21px;
+bottom: 0;
 color: #ffffff;
 font-size: .8em;
 font-weight: bold;
 padding: 4px 10px;
-position: absolute;
-right: 144px;
+position: fixed;
+left: 50%;
+margin-left: -155px;
+margin-bottom: 9px;
+border-radius: 2px;
 }
 
 .date-form-content, .error-content, .close {
@@ -221,6 +240,7 @@ font-weight: bold;
 background: rgba(255, 255, 255, 0.52);
 border: 2px solid rgba(184, 117, 77, 0.61);
 color: #C58453;
+max-width: 80px;
 }
 
 .date-form button {

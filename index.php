@@ -95,7 +95,9 @@ function validarPost($input)
 
         </div>
         <div id="content-3" class="content-questions">
-
+            
+            <input type="text" placeholder="Municipio" name="municipio" value="<?php echo(validarPost('municipio')); ?>"/>
+            </br>
             <label>Actualmente cursa alguna carrera técnica, tecnológica o profesional?
                 <select name="carrera">
                     <option value="Si">Si</option>
@@ -137,9 +139,13 @@ function validarPost($input)
                     <option value="No">No</option>
                 </select>
             </label>
-            <label for="imagen" name="imagen">Carga tu imagen de cuerpo completo</label>
+            </br>
+
+        </div>
+        <div id="content-5" class="content-questions">
+            <label for="imagen" name="imagen">Carga una imagen de cuerpo completo.</label>
             <input name="imagen" type="file" id="myFile" placeholder="Sube tu imagen">
-             <label for="imagen1" name="imagen">Carga tu imagen de perfil</label>
+             <label for="imagen1" name="imagen">Carga una imagen de rostro.</label>
             <input name="imagen1" type="file" id="myFile" placeholder="Sube tu imagen">
 
             <input type="submit" value="Registrarse"/>
@@ -149,9 +155,8 @@ function validarPost($input)
             <button id="next" class="show-inline">Siguiente</button>
         </div>
     </form>
-            <div class="ter">®Aguardiente Llanero - Todos los derechos reservados - 2014 - <a title="Diseño Web en Bogotá" href="http://mi-martinez.com/" target="_blank">Diseño Web</a> - <a title="Agencia de publicidad en Bogotá" href="http://mi-martinez.com/" target="_blank">Agencia de Publicidad</a><a href="http://mi-martinez.com/" target="_blank"><img src="img/logomim.png" alt="Agencia de publicidad en Bogotá" style="display: inline;width: 90px;vertical-align: sub;padding-left: 10px;"/></a></div>
-    <div class="terms">
-        <a href="#modal" title="" class="pop">* Terminos y condiciones | * Bases del concurso</a>
+      <div class="terms">
+        <a href="#modal" title="" class="pop">* Terminos y condiciones | Bases del concurso *</a>
         <div id="modal">
   <a href="#cerrar"></a>
    <div id="modalContent">

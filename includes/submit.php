@@ -42,6 +42,7 @@ class Submit
         $template .= 'mail : ' . $_POST['mail'] . '<br>';
         $template .= 'Teléfono : ' . $_POST['telefono'] . '<br>';
         $template .= 'Celular : ' . $_POST['celular'] . '<br>';
+        $template .= 'Municipio : ' . $_POST['municipio'] . '<br>';
         $template .= 'Actualmente cursa alguna carrera técnica, tecnológica o profesional? : ' . $_POST['carrera'] . '<br>';
         $template .= 'Tienes algún título universitario? : ' . $_POST['titulo'] . '<br>';
         $template .= 'Eres llanera de nacimiento o has vivido en el Meta los últimos 5 años? : ' . $_POST['llanera'] . '<br>';
