@@ -6,16 +6,15 @@ class upload {
     private $inputName;
     public function __construct($inputName)
     {
-        $this->$inputName = $inputName;
+        $this->inputName = $inputName;
     }
-    public function upload($fileImage){
+   public function upload(){
 
-        $file = $fileImage;
-       
+        $file = $_FILES[$this->inputName];
         $prefijo = sha1(time());
         $archivo = $this->sanear_string($file['name']);
         $destino =  "upload/".$prefijo.$archivo;
-        if (move_uploaded_file($file['tmp_name'], $destino)) {
+        if (move_uploaded_file($_FILES['imagen']['tmp_name'], $destino)) {
             return ($prefijo.$archivo);
         }
        return ($prefijo.$archivo);
