@@ -21,18 +21,6 @@ class upload {
         return $file;
     }
 
-    public function upload1(){
-
-
-        $file = $_FILES['imagen1'];
-        $prefijo = sha1(time());
-        $archivo = $this->sanear_string($file['name']);
-        $destino =  "upload/".$prefijo.$archivo;
-        if (move_uploaded_file($_FILES['imagen1']['tmp_name'], $destino)) {
-            return ($prefijo.$archivo);
-        }
-        return $file;
-    }
     private function sanear_string($string) {
         $string = trim($string);
 
