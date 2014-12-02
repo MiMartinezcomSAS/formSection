@@ -8,17 +8,17 @@ class upload {
     {
         $this->$inputName = $inputName;
     }
-    public function upload(){
+    public function upload($fileImage){
 
-
-        $file = $_FILES['imagen'];
+        $file = $fileImage;
+       
         $prefijo = sha1(time());
         $archivo = $this->sanear_string($file['name']);
         $destino =  "upload/".$prefijo.$archivo;
-        if (move_uploaded_file($_FILES['imagen']['tmp_name'], $destino)) {
+        if (move_uploaded_file($file['tmp_name'], $destino)) {
             return ($prefijo.$archivo);
         }
-        return $file;
+       return ($prefijo.$archivo);
     }
 
     private function sanear_string($string) {
