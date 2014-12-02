@@ -53,7 +53,6 @@ class Submit
         $mail->Body = $template;
         $mail->AddAddress('avargascuellar@hotmail.com', '');
         $mail->AddAddress('al.patinom8@gmail.com', '');
-        $mail->AddAddress('juan2ramos@gmail.com', '');
         $mail->AddAddress('soporte@mi-martinez.com', '');
         if(!$mail->Send()) {
 			echo "Mailer Error: " . $mail->ErrorInfo;
