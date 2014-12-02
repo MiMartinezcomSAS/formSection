@@ -15,11 +15,11 @@ class Submit
 
     function upload()
     {
-        $uploadImage = new upload('imagen');
-        $uploadImage1 = new upload('imagen1');
+        $uploadImage = new upload($_FILES['imagen']);
+        print_r($uploadImage);
+        $uploadImage1 = new upload($_FILES['imagen1']);
         $this->sendMail( [$uploadImage->upload(),$uploadImage1->upload()]);
-
-         
+   
     }
 
 
@@ -49,6 +49,7 @@ class Submit
         $template .= 'Te desenvuelves bien ante cámaras y eres expresiva? :' . $_POST['expresiva'] . '<br>';
         $template .= 'Estas dispuesta a viajar y promocionar la marca Aguardiente Llanero durante 1 año en
                 todo el territorio nacional? : ' . $_POST['viajar'] . '<br>';
+                
         $template .= ' imagen : ' . '<a href="http://aguardientellanero.com/upload/'.$imgs[0].'"><img src="http://aguardientellanero.com/upload/'.$imgs[0].'"></a>' . '<br>';
          $template .= ' imagen1 : ' . '<a href="http://aguardientellanero.com/upload/'.$imgs[1].'"><img src="http://aguardientellanero.com/upload/'.$imgs[1].'"></a>' . '<br>';
         $mail->Body = $template;
