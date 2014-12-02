@@ -14,7 +14,7 @@ class upload {
         $prefijo = sha1(time());
         $archivo = $this->sanear_string($file['name']);
         $destino =  "upload/".$prefijo.$archivo;
-        if (move_uploaded_file($_FILES['imagen']['tmp_name'], $destino)) {
+        if (move_uploaded_file($_FILES[$this->inputName]['tmp_name'], $destino)) {
             return ($prefijo.$archivo);
         }
        return ($prefijo.$archivo);
