@@ -80,10 +80,12 @@ function validarPost($input)
             lindas... entonces.. <b> ¡A lo que vinimos, Vamos!</b>
         </p>
 
+
+
         <div id="content-1" class="content-questions">
-            <input type="text" placeholder="Nombre" name="nombre" value="<?php echo(validarPost('nombre')); ?>"/>
+          <!--- <input type="text" placeholder="Nombre" name="nombre" value="<?php echo(validarPost('nombre')); ?>"/>
             <input type="text" placeholder="Apellido" name="apellido" value="<?php echo(validarPost('apellido')); ?>"/>
-            <input type="text" placeholder="Edad" name="edad" value="<?php echo(validarPost('edad')); ?>"/>
+            <input type="text" placeholder="Edad" name="edad" value="<?php echo(validarPost('edad')); ?>"/> -->
         </div>
         <div id="content-2" class="content-questions">
             <input type="text" placeholder="Ocupación" name="ocupacion"
@@ -151,7 +153,7 @@ function validarPost($input)
             <input type="submit" value="Registrarse"/>
         </div>
         <div class="content-button">
-            <button id="prev">Anterior</button>
+        <button id="prev">Anterior</button>
             <button id="next" class="show-inline">Siguiente</button>
         </div>
     </form>
