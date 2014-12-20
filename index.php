@@ -79,8 +79,7 @@ function validarPost($input)
             mas
             lindas... entonces.. <b> ¡A lo que vinimos, Vamos!</b>
         </p>
-
-
+        <div class="cerrada"> CONVOCATORIA CERRADA </div>
 
         <div id="content-1" class="content-questions">
           <!--- <input type="text" placeholder="Nombre" name="nombre" value="<?php echo(validarPost('nombre')); ?>"/>
